@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#004e89">
+<meta name="description" content="Valor M0 clickable prototype: swear oaths to your friends, prove them with photos, earn valor.">
+<title>Valor prototype</title>
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@500;700;800&display=swap">
+<link rel="stylesheet" href="styles.css">
+<!-- Classic script on purpose: themes the page from ?colors= before first paint. -->
+<script src="palette.js"></script>
+</head>
+<body>
+<div class="stage">
+  <aside class="desk-note" aria-label="About this prototype">
+    <img src="assets/valor-pigeon-192.png" alt="" width="96" height="96">
+    <p class="desk-title">Valor</p>
+    <p>M0 clickable prototype. Fake data, saved only in this browser.</p>
+    <p>Use <b>Demo controls</b> at the top of the phone to act as a friend, simulate the group, or fast-forward to a deadline.</p>
+  </aside>
+  <div class="phone" id="phone">
+    <div class="demo-strip" id="demo-strip"></div>
+    <main class="app" id="app" tabindex="-1"></main>
+    <nav class="tabbar" id="tabbar" aria-label="Main" hidden></nav>
+    <div class="toasts" id="toasts" role="status" aria-live="polite"></div>
+    <div class="layer" id="layer" hidden></div>
+    <div class="splash" id="splash" aria-hidden="true">
+      <img src="assets/valor-pigeon-512.png" alt="" width="180" height="180" class="bob">
+      <p>Polishing the sword...</p>
+    </div>
+  </div>
+</div>
+<noscript><p class="noscript">The Valor prototype needs JavaScript. Serve this folder with any static server, for example: python3 -m http.server</p></noscript>
+<script type="module" src="app.js"></script>
+</body>
+</html>

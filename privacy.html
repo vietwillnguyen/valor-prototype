@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#004e89">
+<meta name="referrer" content="no-referrer">
+<title>Privacy | Valor</title>
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@500;700;800&display=swap">
+<link rel="stylesheet" href="styles.css">
+<script src="boot.js"></script>
+</head>
+<body>
+<div class="stage">
+  <div class="phone">
+    <main class="app doc">
+      <article class="screen">
+        <a class="btn-back" href="./">&larr; <span>Back to Valor</span></a>
+        <h1 class="display">Privacy</h1>
+        <p class="lede">Valor is a small, free test run by one person for groups of friends. This is what it keeps about you, who sees it, and how to make it go away.</p>
+
+        <section class="card">
+          <h2 class="section-title">What we store</h2>
+          <ul>
+            <li>The name you pick, your timezone, and the time you confirmed you are 18 or older. We never ask for your birth date.</li>
+            <li>Your profile photo, if you add one. It is optional: without one, your group sees the first letter of your name.</li>
+            <li>Your group's photo, if its owner adds one: only the group's members see it, and anyone holding one of the group's invite links sees it on the invite page. It is deleted within 15 minutes when the owner changes or removes it, when a report about it is upheld, or when the group is deleted; if the person who added it leaves the group or deletes their account, it stays with the group, whose new owner can change or remove it.</li>
+            <li>Your email address, if you save your account or start signing up; if you start signing up and don't finish, your email address is deleted after 7 days. It is used to send you sign-in codes and, unless you turn them off, a few emails about your groups: a new oath, a proof waiting for your vote, your deadline coming up, and how an oath ended. Never more than a few a day, and every one has a link to stop them, no sign-in needed. They carry a first name, the group's name and a link, never a photo. If you're in a duel, we also email you when you're challenged, when your challenge is answered, when your rival checks in (at most once a day), and the result. Your group is told once when a duel begins and once how it ends. These emails carry first names, the group's name and a link, and the same switch and unsubscribe link turn them off.</li>
+            <li>A short record of the emails Valor sent you or chose not to (which kind, for which oath or duel, when), so it never sends the same one twice.</li>
+            <li>Your oaths, proof photos, photo replies, messages, reactions and witness votes.</li>
+            <li>Your valor: every change to it is one line in a ledger (stakes, rewards, witnessing, the daily top-up).</li>
+            <li>Small counts of what happens, such as which days you opened the app and when you tapped "Tell the group", so the operator can tell whether Valor is working.</li>
+            <li>Any reports you file, and blocks you make.</li>
+          </ul>
+          <p>Photos are resized on your phone before upload, which also strips their EXIF data, including location data. The oath and the time are stamped on proof photos. A profile photo is cropped to a square and shrunk on your phone the same way.</p>
+          <p>Your phone keeps your sign-in, your chosen theme and the last group you opened in its own browser storage.</p>
+        </section>
+
+        <section class="card">
+          <h2 class="section-title">Who can see it</h2>
+          <ul>
+            <li>The people in your group see your name, your oaths, photos, messages, votes, reactions and valor. Nobody outside your group can, and there is no public feed or search.</li>
+            <li>Your profile photo is seen only by people who are in a group with you right now. When someone leaves your groups, or you leave theirs, they stop seeing it.</li>
+            <li>If you block someone, neither of you sees the other's oaths, photos, profile photo or messages.</li>
+            <li>The operator can technically see everything stored, including photos. They look at content only when it is reported, or to keep the app running.</li>
+            <li>Your email is never shown to your group.</li>
+          </ul>
+          <p>Valor runs on Supabase (data and photos, stored in Singapore) and GitHub Pages (the web pages), sends its emails through Resend, and loads its fonts from Google Fonts. Resend sees your email address and the email it delivers. Those services see technical details such as your IP address when your phone talks to them, and keep their own short-lived logs. There are no ads and no tracking, and nothing is sold or shared with anyone else.</p>
+        </section>
+
+        <section class="card">
+          <h2 class="section-title">How long we keep it</h2>
+          <ul>
+            <li>Photos are deleted 30 days after the oath settles. The oath and its result stay, so your history still adds up.</li>
+            <li>A reported photo, profile photos included, stops being shown at once; if the operator agrees with the report, it is deleted.</li>
+            <li>When you change or remove your profile photo, the old one is deleted within 15 minutes.</li>
+            <li>The record of emails sent is deleted after a week.</li>
+            <li>Everything else stays until you delete your account, leave a group that then has nobody in it, or the test ends.</li>
+            <li>Any weekly summaries kept for the operator hold only counts, never names.</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2 class="section-title">Deleting everything</h2>
+          <p>In Valor, open Profile and tap "Delete my account". Your name, oaths, proofs, votes, messages, reactions, valor and reports you filed are removed at once, and your photos, your profile photo included, are deleted within 15 minutes; a group photo you added stays with its group, as described above. Your friends' own oaths and groups carry on without you. There are no backups to chase.</p>
+          <p>Leaving a group is also always free: your active oaths there are withdrawn and your stakes come back.</p>
+        </section>
+
+        <section class="card">
+          <h2 class="section-title">Contact</h2>
+          <p>Questions, or a deletion you cannot do yourself: <a href="mailto:hello@vnlabs.dev">hello@vnlabs.dev</a>.</p>
+        </section>
+
+        <p class="fine">See also the <a href="terms.html">terms</a>.</p>
+      </article>
+    </main>
+  </div>
+</div>
+</body>
+</html>
